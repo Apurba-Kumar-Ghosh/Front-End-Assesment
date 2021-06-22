@@ -5,7 +5,10 @@ import {
     Column,
     Group,
     Text,
-    Button
+    Button,
+    Sec,
+    Frame,
+    FrameButton
 
 } from "./styles/table"
 export function Table({ children, ...restProps }) {
@@ -23,10 +26,10 @@ Table.Column = function TableColumn({ children, ...restProps }) {
         {children}
     </Column>
 }
-Table.Group = function TableGroup({ children, ...restProps }) {
-    return <Group {...restProps}>
+Table.Frame = function TableFrame({ children, ...restProps }) {
+    return <Frame {...restProps}>
         {children}
-    </Group>
+    </Frame>
 }
 Table.Button = function TableButton({ children, ...restProps }) {
     return <Button {...restProps}>
@@ -38,3 +41,12 @@ Table.Text = function TableText({ children, ...restProps }) {
         {children}
     </Text>
 }
+Table.Sec = function TableSec({ children, ...restProps }) {
+  return <Sec {...restProps}>{children}</Sec>;
+};
+ Table.Group = function TableGroup({ children, ...restProps }) {
+   return <Group {...restProps}>{children}</Group>;
+};
+ Table.FrameButton = function TableFrameButton({ children, ...restProps }) {
+   return <FrameButton {...restProps}>{children}</FrameButton>;
+ };

@@ -1,5 +1,4 @@
 import React from "react";
-import { GrProjects } from "react-icons/gr";
 import { FaWifi } from "react-icons/fa";
 import { BsBell } from "react-icons/bs";
 import { AiOutlineQuestionCircle, AiOutlineTable } from "react-icons/ai";
