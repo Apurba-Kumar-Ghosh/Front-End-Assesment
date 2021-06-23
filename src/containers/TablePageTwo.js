@@ -80,7 +80,7 @@ export function TableContainerTwo({ children, ...restProps }) {
         <Table.Column>
           <Table.Sec>
             <Table.Text>last seen 1 min ago</Table.Text>
-            <SliderButton checked />
+            <SliderButto />
           </Table.Sec>
         </Table.Column>
       </Table.Row>
@@ -142,7 +142,7 @@ export function TableContainerTwo({ children, ...restProps }) {
         <Table.Column>
           <Table.Sec>
             <Table.Text>last seen 1 min ago</Table.Text>
-            <SliderButton checked />
+            <SliderButton  />
           </Table.Sec>
         </Table.Column>
       </Table.Row>
@@ -181,7 +181,7 @@ export function TableContainerTwo({ children, ...restProps }) {
         <Table.Column>
           <Table.Sec>
             <Table.Text>last seen 1 min ago</Table.Text>
-            <SliderButton checked />
+            <SliderButton />
           </Table.Sec>
         </Table.Column>
       </Table.Row>
@@ -220,7 +220,7 @@ export function TableContainerTwo({ children, ...restProps }) {
         <Table.Column>
           <Table.Sec>
             <Table.Text>last seen 1 min ago</Table.Text>
-            <SliderButton checked />
+            <SliderButton />
           </Table.Sec>
         </Table.Column>
       </Table.Row>
