@@ -18,14 +18,20 @@ export const Heading = styled.img`
 width : 100px;
 height : 21.31px;
 padding : 0 10px;`;
+
 export const Text = styled.p`
 line-height : 21px;
 font-size : 18px;`;
+
 export const Group = styled.div`
 display : flex;
 flex-direction : column;
 align-items : flex-start;
 width : 100%;
+
+  a{
+    text-decoration : none;
+  }
 `;
 export const Item = styled.div`
   display: flex;

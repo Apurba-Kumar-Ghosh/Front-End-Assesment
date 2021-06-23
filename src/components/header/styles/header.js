@@ -10,7 +10,8 @@ export const Container = styled.section`
 export const Section = styled.div`
   display: flex;
   align-items: baseline;
-  padding-right: 30px;
+  padding : 0 20px;
+  text-align :center;
   border-bottom: ${({ isActive }) =>
     isActive === true ? "5px solid #673ab7" : "none"};
   color: ${({ isActive }) => (isActive === true ? "#673AB7" : "black")};

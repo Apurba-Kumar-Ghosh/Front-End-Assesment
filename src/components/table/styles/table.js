@@ -7,20 +7,31 @@ margin : 0 auto;
 display : flex;
 flex-direction : column;
 `;
+export const Accordion = styled.div`
+width : 100%;
+height : 100%;`;
+export const AccordionItems = styled.div`
+display : flex;
+flex-direction : column;
+align-items : center;
+border-right : 1px solid black;
+&:last-of-type {
+  border-right : 0;
+}`;
 export const Row = styled.div`
   min-width: 100%;
-  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-bottom: 2px solid black;
-
+  height: ${({ isOpen }) => (isOpen === true ? "285px" : "60px")};
   &:nth-of-type(2) {
     background: #f2f2f2;
   }
   &:nth-of-type(1) {
-    margin-top : 40px;
+    margin-top: 40px;
   }
+  border-bottom: ${({ accordion }) =>
+    accordion === true ? "0" : "2px solid black"};
 `;
 export const Column = styled.div`
 flex-basis : 25%;
@@ -40,15 +51,55 @@ export const Button = styled.button`
     font-weight : 700;
 `;
 export const Text = styled.p``;
-export const Group = styled.div`
-display : flex;
-justify-content : center;
-
-    div{
-        border-right : 1px solid black;
-    }
+export const HeaderFrame = styled.div`
+  display: flex;
+  padding: 0;
+  align-items : center;
 `;
 export const GroupItem = styled.p`
+  flex-basis: 20%;
+  border-right : 1px solid black;
+  font-size : 14px;
+  padding : 0;
+  &:last-of-type{
+      border-right : 0;
+  }
+`;
+export const HeaderSection = styled.div`
+  display: flex;
+  height : 50px;
+  align-items: baseline;
+  padding: 0 20px;
+  text-align: center;
+  border-bottom: ${({ isActive }) =>
+    isActive === true ? "5px solid #673ab7" : "none"};
+  color: ${({ isActive }) => (isActive === true ? "#673AB7" : "black")};
+  font-weight: ${({ isActive }) => (isActive === true ? "700" : "400")};
+`;
+export const HeaderText = styled.div`
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -90px;
+  height: 80px;
+  color: #673ab7;
+  font-weight : 700;
+`;
+
+export const Section = styled.div`
+width :100%;
+display : flex;
+flex-direction : column;`;
+export const IconHolder = styled.div`
+position : absolute;
+left : 5px;`;
+export const Group = styled.div`
+position :relative;
+display : flex;
+height : 60px;
+justify-content : center;
+align-items : center;
 `;
 export const Sec = styled.div`
 display : flex;
