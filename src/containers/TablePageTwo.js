@@ -80,7 +80,7 @@ export function TableContainerTwo({ children, ...restProps }) {
         <Table.Column>
           <Table.Sec>
             <Table.Text>last seen 1 min ago</Table.Text>
-            <SliderButto />
+            <SliderButton />
           </Table.Sec>
         </Table.Column>
       </Table.Row>
